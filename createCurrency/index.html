@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function money(amount){
+        const cash = amount.toString()
+        let result = ""
+        for(let i = 0; i < cash.length; i ++){
+            if(i % 3 === 0 && i > 0){
+                result += ","
+            }
+            console.log(cash[i], i)
+            result += cash[i]
+        }
+        console.log(result)
+}
+
+money(10000000000000)
+</script>
+</html>

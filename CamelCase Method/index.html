@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function camelCaseMethod(s){
+        const arrayofWords = s.split(" ").map(word => {
+           return  word.slice(0,1).toUpperCase() + word.slice(1)
+        }).join("")
+        console.log(arrayofWords)
+    }
+
+    camelCaseMethod("test case")
+
+</script>
+</html>

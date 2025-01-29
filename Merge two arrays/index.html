@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function mergeArrays(a, b) {
+    const result = []
+    let lengthToUse = ""
+
+    if(a.length > b.length){
+        lengthToUse = a.length
+    }else{
+        lengthToUse = b.length
+    }
+    
+    for(let i = 0; i < lengthToUse; i++){
+        result.push(a[i])
+        result.push(b[i])
+    }
+
+    cleanedArray = result.filter((element, _) => {
+        return element !== undefined
+    })
+
+    return cleanedArray
+}
+
+mergeArrays(['b', 'r', 'a', 'u', 'r', 's', 'e', 'q', 'z'], [2, 5, 8, 23, 67, 6])
+</script>
+</html>
